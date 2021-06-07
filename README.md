@@ -15,5 +15,7 @@
 ## Conceptos que no pude resolver en el tiempo que realice el challenge
 - Tuve un inconveniente que descrubí avanzado el proyecto que fue al crear la BD y vincular las columnas de Peliculas con Personajes y Genero.
 - Query param en los metodos edad y nombre de personajes.
+- No hice la Autenticación.
+- No hice el envío de mail.
 - El trabajo no esta terminado. 
 
