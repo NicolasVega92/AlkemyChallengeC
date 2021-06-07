@@ -45,7 +45,7 @@ namespace AlkemyAPI.Controllers
         }
         //GET api/personaje/edad/{edad}
         [HttpGet("edad/{edad}")]
-        public ActionResult <PersonajeReadDtos> GetPersonajeByEdad(int edad)
+        public ActionResult<PersonajeReadDtos> GetPersonajeByEdad(int edad)
         {
             var personajeItem = _repo.GetPersonajeByEdad(edad);
             if (personajeItem != null)
