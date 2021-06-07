@@ -109,5 +109,15 @@ namespace AlkemyAPI.Data
         {
             throw new System.NotImplementedException();
         }
+
+        public Personaje GetPersonajeByNombre(string nombre)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Personaje GetPersonajeByEdad(int edad)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

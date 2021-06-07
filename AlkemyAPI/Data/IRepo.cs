@@ -15,6 +15,8 @@ namespace AlkemyAPI.Data
         #region Personaje
         IEnumerable<Personaje> GetAllPersonajes();
         Personaje GetPersonajeById(int id);
+        Personaje GetPersonajeByNombre(string nombre);
+        Personaje GetPersonajeByEdad(int edad);
         void CreatePersonaje(Personaje perso);
         void UpdatePersonaje(Personaje perso);
         void DeletePersonaje(Personaje perso);

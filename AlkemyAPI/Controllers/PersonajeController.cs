@@ -43,6 +43,28 @@ namespace AlkemyAPI.Controllers
             }
             return NotFound();
         }
+        //GET api/personaje/edad/{edad}
+        [HttpGet("edad/{edad}")]
+        public ActionResult <PersonajeReadDtos> GetPersonajeByEdad(int edad)
+        {
+            var personajeItem = _repo.GetPersonajeByEdad(edad);
+            if (personajeItem != null)
+            {
+                return Ok(_mapper.Map<PersonajeReadDtos>(personajeItem));
+            }
+            return NotFound();
+        }
+        //GET api/personaje/nombre/{nombre}
+        [HttpGet("nombre/{nombre}")]
+        public ActionResult<PersonajeReadDtos> GetPersonajeByNombre(string nombre)
+        {
+            var personajeItem = _repo.GetPersonajeByNombre(nombre);
+            if (personajeItem != null)
+            {
+                return Ok(_mapper.Map<PersonajeReadDtos>(personajeItem));
+            }
+            return NotFound();
+        }
 
         //POST api/personaje
         [HttpPost]

@@ -75,9 +75,19 @@ namespace AlkemyAPI.Data
             return _context.Peliculas.FirstOrDefault(p => p.ID_PELICULA == id);
         }
 
+        public Personaje GetPersonajeByEdad(int edad)
+        {
+            return _context.Personajes.FirstOrDefault(p => p.EDAD == edad);
+        }
+
         public Personaje GetPersonajeById(int id)
         {
             return _context.Personajes.FirstOrDefault(p => p.ID == id);
+        }
+
+        public Personaje GetPersonajeByNombre(string nombre)
+        {
+            return _context.Personajes.FirstOrDefault(p => p.NOMBRE == nombre);
         }
 
         public bool SaveChanges()
